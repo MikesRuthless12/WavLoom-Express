@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400&family=Rubik+Spray+Paint&display=swap');
+
+:root {
+  /* Colors */
+  --color-primary: #39FF14;
+  --color-primary-hover: #32E612;
+  --color-primary-muted: #39FF1433;
+  --color-bg: #0A0A0A;
+  --color-surface: #141414;
+  --color-surface-elevated: #1E1E1E;
+  --color-border: #2A2A2A;
+  --color-text: #E8E8E8;
+  --color-text-secondary: #888888;
+  --color-text-muted: #555555;
+  --color-success: #22C55E;
+  --color-warning: #F59E0B;
+  --color-error: #EF4444;
+  --color-info: #3B82F6;
+
+  /* Typography */
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+
+  /* Spacing */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+
+  /* Border Radius */
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 8px;
+  --radius-full: 9999px;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.titlebar-drag:hover .titlebar-title,
+.titlebar-title:hover {
+  color: var(--color-primary);
+  text-shadow: 0 0 8px var(--color-primary-muted), 0 0 16px var(--color-primary-muted);
+}
+
+.titlebar-title {
+  transition: color 0.2s ease, text-shadow 0.2s ease;
+  perspective: 400px;
+  display: inline-block;
+}
+
+.titlebar-title:hover {
+  animation: titleFlip 0.8s ease-in-out;
+}
+
+@keyframes titleFlip {
+  0% {
+    transform: rotateX(0deg);
+  }
+  100% {
+    transform: rotateX(360deg);
+  }
+}
+
+@keyframes analyzePulse {
+  0%, 100% {
+    opacity: 0.15;
+  }
+  50% {
+    opacity: 0.4;
+  }
+}
+
+@keyframes skeletonShimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.skeleton {
+  background: linear-gradient(
+    90deg,
+    var(--color-surface) 25%,
+    var(--color-surface-elevated) 50%,
+    var(--color-surface) 75%
+  );
+  background-size: 200% 100%;
+  animation: skeletonShimmer 1.5s ease-in-out infinite;
+  border-radius: var(--radius-sm);
+}
+
+.fade-in {
+  animation: fadeIn 0.2s ease-out;
+}
+
+/* ── Accessibility: Focus indicators ── */
+*:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+/* Remove default outline for mouse users (focus-visible handles keyboard) */
+*:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* ── Accessibility: Reduced motion ── */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .titlebar-title:hover {
+    animation: none;
+  }
+
+  .skeleton {
+    animation: none;
+  }
+
+  .fade-in {
+    animation: none;
+  }
+}
+
+/* ── Accessibility: Minimum click targets ── */
+/* Buttons get a minimum 44×44px touch target via padding/sizing.
+   Individual components opt in via min-w-[44px] min-h-[44px] Tailwind classes
+   or explicit sizing. Tiny inline buttons use relative positioning with
+   a ::before pseudo-element to expand the hit area without visual change. */
+button::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 44px;
+  min-height: 44px;
+}
+
+button {
+  position: relative;
+}

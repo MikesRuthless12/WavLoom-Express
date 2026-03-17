@@ -1,0 +1,50 @@
+appId: com.havocsoftware.wavloom-express
+productName: WavLoom Express
+copyright: Copyright © 2026 Havoc Software
+
+icon: build/icon.png
+
+directories:
+  output: release
+  buildResources: build
+
+files:
+  - dist/**/*
+  - dist-electron/**/*
+  - node_modules/better-sqlite3/**/*
+  - node_modules/bindings/**/*
+  - node_modules/prebuild-install/**/*
+  - node_modules/file-uri-to-path/**/*
+  - "!node_modules/better-sqlite3/deps/**/*"
+  - "!node_modules/better-sqlite3/src/**/*"
+
+asar: true
+asarUnpack:
+  - "**/*.node"
+
+mac:
+  category: public.app-category.music
+  target:
+    - target: dmg
+      arch:
+        - x64
+        - arm64
+  identity: null
+
+win:
+  target:
+    - target: nsis
+      arch:
+        - x64
+
+nsis:
+  oneClick: false
+  allowToChangeInstallationDirectory: true
+  perMachine: false
+
+linux:
+  category: Audio
+  target:
+    - target: AppImage
+      arch:
+        - x64

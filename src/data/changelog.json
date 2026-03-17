@@ -1,0 +1,23 @@
+[
+  {
+    "version": "1.0.0-alpha",
+    "date": "2026-03-16",
+    "changes": [
+      "Initial alpha release of WavLoom Express",
+      "Real-time waveform visualization with WaveSurfer.js",
+      "Effects rack: reverb, delay, pitch/transpose, distortion, filter, volume, pan",
+      "Envelope editor with custom curves",
+      "A/B comparison between original and processed audio",
+      "Fade in/out with draggable handles",
+      "Export to WAV, MP3, FLAC, and AIFF with configurable bit depth and bitrate",
+      "Preset library with categories and custom preset saving",
+      "Import and export presets as .wlepreset files",
+      "Kit builder with drag-and-drop slots and batch kit export",
+      "File browser with folder navigation and recent files",
+      "Session restore to pick up where you left off",
+      "Configurable audio buffer size for latency tuning",
+      "EDM / Realistic mode toggle",
+      "Multi-language support via i18next"
+    ]
+  }
+]

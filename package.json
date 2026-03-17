@@ -1,0 +1,50 @@
+{
+  "name": "wavloom-express",
+  "private": true,
+  "version": "1.0.0-alpha",
+  "description": "WavLoom Express — audio production workstation",
+  "author": "Havoc Software",
+  "type": "module",
+  "main": "dist-electron/main.cjs",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "electron:compile": "tsc -p electron/tsconfig.json && node scripts/rename-electron-cjs.js",
+    "electron:dev": "npm run electron:compile && concurrently -k \"vite\" \"wait-on http://localhost:5173 && electron .\"",
+    "electron:build": "npm run build && npm run electron:compile && electron-builder",
+    "build:mac": "npm run build && npm run electron:compile && electron-builder --mac",
+    "build:win": "npm run build && npm run electron:compile && electron-builder --win",
+    "build:linux": "npm run build && npm run electron:compile && electron-builder --linux",
+    "build:all": "npm run build && npm run electron:compile && electron-builder --mac --win --linux",
+    "postinstall": "electron-rebuild"
+  },
+  "dependencies": {
+    "@breezystack/lamejs": "^1.2.7",
+    "better-sqlite3": "^12.8.0",
+    "i18next": "^25.8.18",
+    "libflacjs": "^5.4.0",
+    "lucide-react": "^0.577.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-i18next": "^16.5.8",
+    "wavesurfer.js": "^7.12.3",
+    "zustand": "^5.0.12"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.13",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "autoprefixer": "^10.4.27",
+    "concurrently": "^9.2.1",
+    "electron": "^41.0.2",
+    "electron-builder": "^26.8.1",
+    "electron-rebuild": "^3.2.9",
+    "postcss": "^8.5.8",
+    "tailwindcss": "^3.4.19",
+    "typescript": "~5.7.2",
+    "vite": "^6.2.0",
+    "wait-on": "^9.0.4"
+  }
+}

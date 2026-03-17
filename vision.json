@@ -1,0 +1,90 @@
+{
+  "meta": {
+    "createdAt": "2026-03-15T12:00:00Z",
+    "updatedAt": "2026-03-15T12:00:00Z",
+    "version": "1.0",
+    "plaidVersion": "1.0"
+  },
+  "creator": {
+    "name": "Mike",
+    "expertise": "Dark Trap music producer and software developer with a Master's degree in Information Technology",
+    "background": "Mike is a Dark Trap producer and developer with a Master's in IT. He's spent years producing and kept hitting the same wall — wanting original sounds he could own and sell, but the tools either sounded fake or left him in copyright limbo. He's seen firsthand the gap between what producers need and what the software market gives them — most audio tools are built by engineers who don't make beats. He's tired of watching producers struggle with the same workflow: ripping sounds from packs they can't legally resell, or spending hours tweaking synths that still don't sound right. With both the technical chops and the ear, he's building the solution himself."
+  },
+  "purpose": {
+    "whoYouHelp": "Independent beat producers, sound designers, and sample pack creators across Trap, Drill, EDM, and beyond — anyone who sells beats, builds sample pack catalogs, or wants a unique sonic identity. They need sounds that are legally theirs, a fast pipeline to generate professional-quality originals at scale, and a way to stand apart from everyone using the same recycled packs.",
+    "problemYouSolve": "Producers are stuck in a copyright trap with AI-generated sounds they can't legally sell. Everyone's using the same recycled packs so nobody sounds unique. And there's no single tool that takes a reference sound and produces an original, export-ready, commercially ownable version — instead they're stitching together 3-4 apps and losing creative flow with every context switch.",
+    "desiredTransformation": "Producers go from consumers to creators, owning a library of original sounds they can sell and copyright. What used to take hours now takes minutes — load, analyze, tweak, export, done. And every producer develops a sonic fingerprint that's uniquely theirs, because their sounds come from their own references and taste, not the same recycled pool.",
+    "whyYou": "Mike IS the user — he produces Dark Trap and has felt every one of these pain points firsthand. He's not guessing what producers need; he's building the tool he wishes existed every time he sits down to make a beat. And he understands the business side — producers sell beats, kits, and sample packs as a livelihood. He knows the economics of BeatStars, Splice, and Gumroad because he lives in that ecosystem. This isn't a toy for hobbyists — it's a revenue tool, built by someone who gets it."
+  },
+  "product": {
+    "name": "SampleMint",
+    "oneLiner": "SampleMint lets producers analyze any sound and create original, copyrightable one-shots and drum kits they can sell — no AI copyright headaches.",
+    "howItWorks": "A producer opens SampleMint and chooses their path: analyze an existing sound (via file explorer — single file or full directory) or start fresh from the built-in preset library of ultra-realistic, dry instrument one-shots. From either starting point, SampleMint displays the waveform and gives the producer full control — reverb, echo, pitch, and more — with knob-based controls. They can toggle between realistic/human and EDM modes, preview changes in real time on the waveform, and export the finished one-shot as a new file they fully own and can sell commercially.",
+    "keyCapabilities": [
+      "Audio file analysis (single file + batch directory scanning, top-level)",
+      "Extensive instrument preset library (dry, ultra-realistic base sounds across as many instruments as possible)",
+      "Knob-based effects controls (reverb, echo, pitch, and more)",
+      "Real-time waveform visualization",
+      "Realistic/human vs. EDM mode toggle",
+      "Built-in file explorer for loading and organizing kits",
+      "Save/load presets (share with others, but no marketplace)",
+      "A/B comparison between original reference and new sound (copyright verification)",
+      "Kit builder workspace (organize multiple one-shots into a packaged drum kit)",
+      "Drag-and-drop integration with DAWs",
+      "Export to common audio formats with full commercial rights",
+      "Internationalization (top 10 languages)"
+    ],
+    "platform": "cross-platform",
+    "marketDifferentiation": "Unlike AI sample generators, SampleMint gives producers full copyright ownership because the creative decisions are yours. Unlike DAW-based workflows that chain synths, samplers, and effects across multiple plugins, SampleMint puts the entire pipeline in one focused app built for producers who sell sounds. The A/B comparison proves your output is original, the kit builder packages it for sale, and drag-and-drop lets you test in your DAW without leaving the flow.",
+    "magicMoment": "Whether a producer analyzes a favorite kick and creates an original version with A/B proof in seconds, picks a preset snare and sound-designs it faster than browsing Splice, or batch-analyzes a whole folder and exports a complete original kit ready for BeatStars in one session — the moment they realize they'll never need to buy another drum kit again is the moment SampleMint clicks."
+  },
+  "audience": {
+    "primaryUser": "Marcus, 24, bedroom Trap producer in Atlanta selling beats on BeatStars for $30-$50 a lease, wanting to sell drum kits as a side revenue stream but lacking the synth knowledge to make sounds from scratch. Priya, 29, sound designer and sample pack creator selling packs on Gumroad and Loopmasters, spending her days layering and processing sounds across 5-6 plugins. Deon, 31, EDM and Drill producer with 10k followers who wants every beat to have a signature sound and eventually sell his own branded kit line.",
+    "secondaryUsers": [
+      "Music educators and production course creators who teach beat-making on YouTube, Skillshare, or Udemy and need a tool they can demo in tutorials — their students become SampleMint users",
+      "Beat-selling platform operators and kit curators who run stores on BeatStars or manage sound library brands and need their producers to output original, copyright-clear content",
+      "Hobbyist producers and beatmakers just getting into sound design — SampleMint's preset library and visual waveform feedback makes sound design approachable for the first time"
+    ],
+    "currentAlternatives": "DAW plugin chains and manual labor (Ableton, FL Studio, Logic + synths like Serum or Vital, layering samples, running through effects chains — slow, requires deep synth knowledge, 5 disconnected tools duct-taped together). AI generation tools like Splice Create or Drumloop AI (fast but copyright is murky — most producers don't know they might not own what they generated). Just buying packs and living with it (Splice subscriptions, Cymatics freebies, BeatStars kits — never creating original sounds, just stacking the same shared libraries everyone else uses).",
+    "frustrations": "Current tools don't work well — AI output is 'close enough' but never quite right and you can't fine-tune it, DAW workflows require chaining 5 plugins for one usable one-shot. They feel bad to use — creative anxiety about copyright, constant nagging 'can I actually sell this?', browsing Splice for the 500th time feels like settling, not creating. They cost too much time and money — Splice subscriptions, synth plugin licenses, sample pack purchases all add up, especially for bedroom producers. Hours spent on workflows that should take minutes while the actual beat-making sits waiting. SampleMint exists so every producer — not just the ones with expensive gear and deep synth knowledge — can create and own original sounds at a price point anyone can afford."
+  },
+  "business": {
+    "revenueModel": "freemium",
+    "initialGoal": "500 downloads across all platforms, 50 active weekly users, 10 paying subscribers on the premium tier, and a small but engaged Discord community of 100 producers giving feedback and sharing presets.",
+    "sixMonthVision": "SampleMint is featured regularly in YouTube production tutorials and has partnerships with 2-3 beat-making educators who use it in their courses. 3,000 total users, 300 paying subscribers, and the Discord community has become a hub where producers share presets and give feedback that shapes the roadmap. Internationalization is shipped and downloads are growing outside the US.",
+    "constraints": "Solo founder wearing every hat — dev, design, marketing, support. IT background covers app architecture and Electron, but will lean on existing audio processing libraries rather than building a synthesis engine from scratch. Internationalization needs to happen without spending a fortune on translation. Bootstrapping — every dollar counts until revenue starts coming in.",
+    "goToMarket": "YouTube producer community outreach — reach out to mid-tier beat-making YouTubers (10k-100k subs) with early access in exchange for honest reviews, plus create own YouTube demos showing the full workflow. Community-first via Discord — build the SampleMint Discord early as the home base for feedback, preset sharing, and word of mouth. Show up in existing beat-making Discord servers with value, not spam. Let producers sell producers."
+  },
+  "feeling": {
+    "brandPersonality": "The underground expert — confident, no-nonsense, street-smart. Knows the craft inside and out but doesn't flex about it. Talks to you like a fellow producer, not a customer. Dark, clean, professional — the kind of person who shows up to the studio with exactly what you need and nothing you don't.",
+    "visualMood": "Neon mint aesthetic — dark matte black base with vibrant lime green accents. Waveforms glow, active knobs and buttons pop, but the layout is clean and uncluttered. No unnecessary controls. Modern, user-friendly interface that feels like a premium audio tool with swagger. It looks like it belongs on a producer's setup, but a first-time user can sit down and immediately know where everything is.",
+    "toneOfVoice": "Cool and minimal — few words, maximum impact. Let the interface speak for itself. Error message: 'Unsupported format.' Success state: 'Exported.' CTA: 'New sound.' Almost terminal-like brevity — respects the user's time and intelligence. SampleMint doesn't over-explain. It assumes you know what you're doing, and if you don't, the UI is clear enough that you'll figure it out.",
+    "antiPatterns": "Never corporate or salesy — no 'Unlock your creative potential!', no marketing speak inside the app, no upsell popups interrupting the workflow, no onboarding tours that take 12 clicks to dismiss. Never cluttered or overwhelming — no walls of tiny buttons like a Boeing cockpit, no features crammed into every pixel, no settings menus 5 levels deep. If a producer opens the app and feels lost, something went wrong. White space is a feature. Never toy-like or gimmicky — no cartoonish icons, no bouncy animations, no gamification ('You've unlocked a new sound! +50 XP!'). This is a professional tool for people who make money with their music. It should feel like a weapon, not a toy."
+  },
+  "techStack": {
+    "appType": "cross-platform",
+    "frontend": {
+      "choice": "React + Vite",
+      "rationale": "Largest ecosystem, excellent audio visualization libraries (Wavesurfer.js, Web Audio API), pairs perfectly with Electron, massive community support"
+    },
+    "backend": {
+      "choice": "None (local-first) + Node.js/Express license server",
+      "rationale": "All audio processing happens on-device for zero latency and offline capability. A lightweight Node.js/Express API on a $5-6/month VPS handles only license key validation, device binding, and activation/deactivation. Keeps infrastructure cost predictable within $50-100/month total budget."
+    },
+    "database": {
+      "choice": "SQLite via better-sqlite3",
+      "rationale": "Local SQLite for app data (presets, kit metadata, user settings) — zero setup, zero cost, works offline. SQLite on the VPS for license data. Fast reads/writes for local data with room to grow."
+    },
+    "auth": {
+      "choice": "Serial key licensing with hardware fingerprinting",
+      "rationale": "No user sign-in — industry-standard software licensing approach for audio tools. Serial keys validated against a hosted license server, bound to user's machine via hardware fingerprint (CPU, hardware specs, MAC address, OS info). Free tier works without a key. Premium tier requires activation. Periodic license checks with offline grace period."
+    },
+    "payments": {
+      "choice": "Polar",
+      "rationale": "Built for digital products, handles global tax/VAT automatically, integrates with serial key delivery flow — user pays, Polar confirms, license server generates and delivers key. Affordable pricing model that aligns with SampleMint's mission to stay accessible."
+    }
+  },
+  "tooling": {
+    "codingAgent": "claude-code"
+  }
+}
