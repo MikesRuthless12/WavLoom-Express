@@ -3,7 +3,8 @@
   "private": true,
   "version": "1.0.0-alpha",
   "description": "WavLoom Express — audio production workstation",
-  "author": "Havoc Software",
+  "author": "Mike Weaver",
+  "license": "UNLICENSED",
   "type": "module",
   "main": "dist-electron/main.cjs",
   "scripts": {
